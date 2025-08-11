@@ -1,0 +1,102 @@
+body {
+    background-color: #1a1a1a; /* Dark background */
+        color: #f0f0f0; /* Light text */
+            font-family: 'Playfair Display', serif; /* More dramatic serif font */
+                display: flex;
+                    justify-content: center;
+                        align-items: center;
+                            min-height: 100vh;
+                                margin: 0;
+                                    padding: 30px;
+                                    }
+                                    .workbench-container {
+                                        width: 100%;
+                                            max-width: 700px; /* Slightly narrower */
+                                                background-color: #222; /* Darker container */
+                                                    border-radius: 12px; /* More rounded corners */
+                                                        box-shadow: 0 8px 20px rgba(0,0,0,0.3); /* More pronounced shadow */
+                                                            padding: 30px;
+                                                                display: flex;
+                                                                    flex-direction: column;
+                                                                    }
+                                                                    #text-input {
+                                                                        width: 100%;
+                                                                            min-height: 280px; /* Slightly taller */
+                                                                                font-size: 1.3rem; /* Slightly larger text */
+                                                                                    padding: 20px;
+                                                                                        border: 1px solid #444; /* Darker border */
+                                                                                            border-radius: 8px;
+                                                                                                resize: vertical;
+                                                                                                    outline: none;
+                                                                                                        box-sizing: border-box;
+                                                                                                            background-color: #333; /* Dark text area */
+                                                                                                                color: #f0f0f0;
+                                                                                                                    line-height: 1.6; /* Improved readability */
+                                                                                                                    }
+                                                                                                                    #text-input:focus {
+                                                                                                                        border-color: #64b5f6; /* Subtle focus color */
+                                                                                                                        }
+                                                                                                                        .control-panel {
+                                                                                                                            margin-top: 30px;
+                                                                                                                                padding-top: 20px;
+                                                                                                                                    border-top: 1px solid #444; /* Separator */
+                                                                                                                                        display: flex;
+                                                                                                                                            flex-direction: column;
+                                                                                                                                                gap: 20px;
+                                                                                                                                                }
+                                                                                                                                                .controls-row {
+                                                                                                                                                    display: flex;
+                                                                                                                                                        justify-content: space-between;
+                                                                                                                                                            align-items: center;
+                                                                                                                                                                flex-wrap: wrap;
+                                                                                                                                                                    gap: 15px;
+                                                                                                                                                                    }
+                                                                                                                                                                    .control-btn {
+                                                                                                                                                                        padding: 14px 24px;
+                                                                                                                                                                            font-size: 1.1rem;
+                                                                                                                                                                                font-weight: 700;
+                                                                                                                                                                                    cursor: pointer;
+                                                                                                                                                                                        border: 2px solid #64b5f6; /* Highlight color */
+                                                                                                                                                                                            background-color: transparent; /* Transparent button */
+                                                                                                                                                                                                color: #64b5f6;
+                                                                                                                                                                                                    border-radius: 8px;
+                                                                                                                                                                                                        transition: background-color 0.3s, color 0.3s;
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        .control-btn:hover {
+                                                                                                                                                                                                            background-color: rgba(100, 181, 246, 0.2); /* Subtle hover effect */
+                                                                                                                                                                                                                color: #fff;
+                                                                                                                                                                                                                }
+                                                                                                                                                                                                                .font-controls {
+                                                                                                                                                                                                                    display: flex;
+                                                                                                                                                                                                                        align-items: center;
+                                                                                                                                                                                                                            gap: 15px;
+                                                                                                                                                                                                                            }
+                                                                                                                                                                                                                            label {
+                                                                                                                                                                                                                                color: #bbb;
+                                                                                                                                                                                                                                    font-size: 1rem;
+                                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                                    #font-select {
+                                                                                                                                                                                                                                        padding: 10px 14px;
+                                                                                                                                                                                                                                            font-size: 1rem;
+                                                                                                                                                                                                                                                border-radius: 8px;
+                                                                                                                                                                                                                                                    border: 1px solid #444;
+                                                                                                                                                                                                                                                        background-color: #333;
+                                                                                                                                                                                                                                                            color: #f0f0f0;
+                                                                                                                                                                                                                                                                appearance: none; /* Remove default arrow */
+                                                                                                                                                                                                                                                                    -webkit-appearance: none; /* Safari */
+                                                                                                                                                                                                                                                                        background-image: url('data:image/svg+xml;charset=UTF-8,<svg fill="%23f0f0f0" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>');
+                                                                                                                                                                                                                                                                            background-repeat: no-repeat;
+                                                                                                                                                                                                                                                                                background-position-x: calc(100% - 10px);
+                                                                                                                                                                                                                                                                                    background-position-y: 50%;
+                                                                                                                                                                                                                                                                                        padding-right: 30px; /* Adjust padding for arrow */
+                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                        .metric {
+                                                                                                                                                                                                                                                                                            font-size: 1rem;
+                                                                                                                                                                                                                                                                                                font-weight: 400; /* Less bold */
+                                                                                                                                                                                                                                                                                                    color: #bbb;
+                                                                                                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                                                                                                    #char-count, #word-count {
+                                                                                                                                                                                                                                                                                                        color: #f0f0f0;
+                                                                                                                                                                                                                                                                                                            font-weight: 700;
+                                                                                                                                                                                                                                                                                                            }
+                                                                                                                                                                                                                                                                                                            

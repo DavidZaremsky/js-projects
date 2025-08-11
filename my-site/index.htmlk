@@ -1,0 +1,10 @@
+<body>
+    <h1>Hello, HTML & CSS!</h1>
+        <p>This is my first website built from the command line.</p>
+            <button id="colorChangeBtn">Change Color</button>
+
+                <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+                    <script src="script.js"></script>
+                    </body>
+                    </html>
+                    

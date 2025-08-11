@@ -1,0 +1,26 @@
+body {
+    background-color: #000;
+        color: #fff;
+            font-family: 'Roboto Mono', monospace;
+                display: flex;
+                    justify-content: center;
+                        align-items: center;
+                            min-height: 100vh;
+                                margin: 0;
+                                    text-align: center;
+                                    }
+                                    .container {
+                                        padding: 20px;
+                                        }
+                                        #unix-time {
+                                            font-size: 3rem;
+                                                font-weight: 700;
+                                                    margin: 0;
+                                                    }
+                                                    #fun-fact {
+                                                        font-size: 1rem;
+                                                            max-width: 600px;
+                                                                margin: 20px auto 0;
+                                                                    line-height: 1.5;
+                                                                    }
+                                                                    
